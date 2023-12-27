@@ -141,4 +141,25 @@ This tutorial outlines the implementation of on-premises Active Directory within
     
 ![37_Client1_login_asadmin](https://github.com/JustinHawks/configure-active-directory/assets/88342524/e2d19646-845c-4101-a4c4-a28ada93472f)
 
+29. Allow "Domain Users" access to remote desktop. You can now log into Client-1 as a non-admin user. (This can also be done with Group Policy, which allowes you to change multiple systems at once.)
 
+![38_Client1_remotedesk_domainusers](https://github.com/JustinHawks/configure-active-directory/assets/88342524/28e47e12-7295-474a-a48e-8226bd0eba6d)
+
+![39_AD_users_](https://github.com/JustinHawks/configure-active-directory/assets/88342524/d266f7f5-0ab9-4e76-8889-7ad69bb71dbe)
+
+30. We can test the active directory by creating a blank user account and attempting to log into Client-1 with it.
+
+![43_AD_pickrandomuser](https://github.com/JustinHawks/configure-active-directory/assets/88342524/e64ce69c-42a1-4d26-b1d1-87d281177492)
+
+31. If we go to the C drive > Users, we will find a user folder for every user that logged into Client-1.
+    
+![44_successfullogin](https://github.com/JustinHawks/configure-active-directory/assets/88342524/853bf83e-1408-41f1-8012-b0f387fd919a)
+![45_accountsthathavesignedin](https://github.com/JustinHawks/configure-active-directory/assets/88342524/a2cb18a9-74e8-4af9-8e43-ba3c5c8aa204)
+
+ 32. If this user commited multiple failed login attempts, they should be locked out until an admin unlocks their account.
+
+![46_client1_failedlogin](https://github.com/JustinHawks/configure-active-directory/assets/88342524/72c95d7c-ed87-45d6-b10c-ad1e1900d678)
+![47_client1_unlockaccount](https://github.com/JustinHawks/configure-active-directory/assets/88342524/2e863a66-478b-4915-8ee0-6bebb9b2c3ef)
+
+
+    
